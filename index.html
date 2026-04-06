@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akanksha Banbheru | Frontend Web Developer</title>
+  <meta name="description"
+    content="Portfolio of Akanksha Banbheru — Frontend Web Developer based in Nagpur. Building clean, responsive, and high-performance web experiences." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!--  CURSOR  -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!--  LOADER  -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="gradient-text">Loading<span>...</span></span>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <!--  NAVBAR  -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">AB<span>.</span></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+       </ul>
+      <!-- <a href="Akanksha_Banbheru_Frontend_2026.pdf" download class="btn btn-primary nav-cta" id="downloadCv">
+        <i class="fas fa-download"></i> Download CV
+      </a> -->
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!--  HERO  -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <canvas id="particleCanvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for freelance & full-time roles
+      </div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="gradient-text">Akanksha</span><br />
+        I build <span class="typewriter" id="typewriter"></span>
+      </h1>
+      <p class="hero-desc">
+        Frontend Web Developer based in <strong>Nagpur, India</strong>.
+        I specialize in crafting pixel-perfect, performant, and accessible web experiences with
+        clean code and attention to detail.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          View Projects <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+
+  <!--  ABOUT  -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">About Me</span>
+        <h2 class="section-title">Passionate about <span class="gradient-text">crafting</span> the web</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-card-wrap">
+            <div class="about-img-card">
+              <div class="about-avatar">
+                <span>AB</span>
+              </div>
+              <div class="about-badge-card">
+                <i class="fas fa-code"></i>
+                <span>Frontend Dev</span>
+              </div>
+            </div>
+            <div class="floating-chip chip-1"><i class="fab fa-html5"></i> HTML5</div>
+            <div class="floating-chip chip-2"><i class="fab fa-css3-alt"></i> CSS3</div>
+            <div class="floating-chip chip-3"><i class="fab fa-js"></i> JavaScript</div>
+          </div>
+        </div>
+        <div class="about-text reveal">
+          <p class="about-intro">
+            I'm a <strong>Frontend Web Developer</strong> with 2+ years of experience delivering
+            responsive, polished web solutions. I turn design ideas into interactive digital experiences.
+          </p>
+          <p>
+            My approach combines clean semantic markup, performant CSS, and vanilla JavaScript to build
+            websites that are fast, accessible, and maintainable.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Responsive &amp; Mobile-first Design</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Cross-browser Compatibility Testing</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Performance Optimization</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-check-circle"></i>
+              <span>Clean, Maintainable Code</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="mailto:banbheruakanksha@gmail.com" class="btn btn-primary">
+              <i class="fas fa-envelope"></i> Get In Touch
+            </a>
+            <a href="https://www.linkedin.com/in/akanksha-banbheru-28512a213/" target="_blank" class="btn btn-ghost" rel="noopener">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  SKILLS  -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Tech Stack</span>
+        <h2 class="section-title">Skills &amp; <span class="gradient-text">Expertise</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-paint-brush"></i> Frontend</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>HTML5</span></div>
+              <!-- <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div> -->
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>CSS3</span>
+                <!-- <span class="skill-pct">90%</span>     -->
+              </div>
+              <!-- <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div> -->
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>JavaScript</span>
+                <!-- <span class="skill-pct">80%</span> -->
+                 </div>
+              <!-- <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div> -->
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Bootstrap / Responsive</span>
+                <!-- <span class="skill-pct">88%</span> -->
+                 </div>
+              <!-- <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-layer-group"></i> Design &amp; UX</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info"><span>UI/UX Principles</span>
+                <!-- <span class="skill-pct">85%</span> -->
+              </div>
+              <!-- <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div> -->
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Figma / Prototyping</span>
+                <!-- <span class="skill-pct">78%</span> -->
+              </div>
+              <!-- <div class="skill-bar"><div class="skill-fill" data-width="78"></div>        </div> -->
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>CSS Animations</span>
+                <!-- <span class="skill-pct">88%</span> -->
+              </div>
+              <!-- <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div> -->
+            </div>
+            <div class="skill-item">
+              <div class="skill-info"><span>Performance &amp; SEO</span>
+                <!-- <span class="skill-pct">80%</span> -->
+              </div>
+              <!-- <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div> -->
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-tools"></i> Tools</h3>
+          <div class="tools-grid">
+            <div class="tool-chip"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="tool-chip"><i class="fab fa-github"></i> GitHub</div>
+            <div class="tool-chip"><i class="fas fa-code"></i> VS Code</div>
+            <div class="tool-chip"><i class="fab fa-figma"></i> Figma</div>
+            <div class="tool-chip"><i class="fas fa-bug"></i> DevTools</div>
+            <div class="tool-chip"><i class="fas fa-sitemap"></i> REST APIs</div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!--  PROJECTS  -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" id="project-spark">
+          <div class="project-card-inner">
+            <div class="project-number">01</div>
+            <div class="project-content">
+              <div class="project-meta">
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">CSS3</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Bootstrap</span>
+                </div>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Spark &amp; Gather</h3>
+              <p class="project-desc">
+                A multi-page event management website with scroll-triggered animations,
+                custom JS interactions, and a fully responsive layout built for modern browsers.
+              </p>
+              <div class="project-footer">
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link" aria-label="View live demo"><i class="fas fa-external-link-alt"></i> Live Demo </a> -->
+                  <a href="https://github.com/Akanksha-2906/Spark-and-Gather" class="project-link" aria-label="View source code">
+                    <i class="fab fa-github"></i> Source
+                  </a>
+                </div>
+                <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" id="project-advocate">
+          <div class="project-card-inner">
+            <div class="project-number">02</div>
+            <div class="project-content">
+              <div class="project-meta">
+                <div class="project-tags">
+                  <span class="tag">Responsive</span>
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">CSS Grid</span>
+                </div>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Adv. Sahil Banbheru</h3>
+              <p class="project-desc">
+                A professional legal practice portfolio focused on personal branding,
+                client communication tools, and lead generation optimized for local SEO.
+              </p>
+              <div class="project-footer">
+                <div class="project-links">
+                  <!-- <a href="#" class="project-link" aria-label="View live demo"><i class="fas fa-external-link-alt"></i> Live Demo </a> -->
+                  <a href="https://github.com/Akanksha-2906/Sahil_Banbheru" class="project-link" aria-label="View source code">
+                    <i class="fab fa-github"></i> Source
+                  </a>
+                </div>
+                <div class="project-arrow"><i class="fas fa-arrow-right"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-glow"></div>
+        </article
+
+      
+         <!-- Project 3 — CTA Card  -->
+        <article class="project-card project-cta reveal" id="project-more">
+          <div class="project-card-inner">
+            <div class="cta-icon"><i class="fab fa-github"></i></div>
+            <h3>More on GitHub</h3>
+            <p>Explore all my public repositories, experiments, and open-source contributions.</p>
+            <a href="https://github.com/Akanksha-2906" target="_blank" class="btn btn-primary" rel="noopener">
+              View GitHub <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+          <div class="project-glow"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!--  CONTACT  -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Let's <span class="gradient-text">work together</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            <!-- Have a project in mind or an opportunity to discuss? -->
+            I'm always open to interesting conversations — reach out and let's create something great.
+          </p>
+          <div class="contact-items">
+            <a href="mailto:banbheruakanksha@gmail.com" class="contact-item" id="emailLink">
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-label">Email</span>
+                <span class="contact-value">banbheruakanksha@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/akanksha-banbheru-28512a213/" target="_blank" class="contact-item" id="linkedinLink" rel="noopener">
+              <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+              <div>
+                <span class="contact-label">LinkedIn</span>
+                <span class="contact-value">akanksha-banbheru</span>
+              </div>
+            </a>
+            <a href="https://github.com/Akanksha-2906" target="_blank" class="contact-item" id="githubLink" rel="noopener">
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-label">GitHub</span>
+                <span class="contact-value">Akanksha-2906</span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="nameInput">Your Name</label>
+            <input type="text" id="nameInput" name="name" placeholder="Full Name" required />
+          </div>
+          <div class="form-group">
+            <label for="emailInput">Email Address</label>
+            <input type="email" id="emailInput" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="messageInput">Message</label>
+            <textarea id="messageInput" name="message" rows="5" placeholder="Your project details..."
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+            Send Message <i class="fas fa-paper-plane"></i>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--  FOOTER  -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">AB<span>.</span></a>
+          <p>Frontend Web Developer. Building the web, one pixel at a time.</p>
+        </div>
+        
+        <div class="footer-social">
+          <div class="footer-social-header">
+          <h4>Connect</h4>
+          <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+          </div>
+          <div class="social-icons">
+            <a href="https://linkedin.com/in/akanksha-banbheru" target="_blank" class="social-icon" rel="noopener noreferrer"
+              aria-label="LinkedIn" id="footerLinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Akanksha-2906" target="_blank" class="social-icon" aria-label="GitHub" rel="noopener noreferrer"
+              id="footerGitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:banbheruakanksha@gmail.com" class="social-icon" aria-label="Email" id="footerEmail">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </footer>
+
+  <!--  SCRIPT  -->
+  <script src="script.js"> </script>
+</body>
+
+</html>
