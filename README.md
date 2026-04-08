@@ -7,7 +7,7 @@
 
 ## 👩‍💻 About Me
 
-I am a passionate Frontend Developer and working professional specializing in building responsive, clean, and modern websites using **HTML, CSS, and Bootstrap**.
+I am a passionate Frontend Developer and working professional specializing in building responsive, clean, and modern websites using **HTML, CSS, Javascript, React and Bootstrap**.
 
 I focus on writing well-structured code and creating user-friendly designs that work perfectly across all devices. I enjoy transforming ideas and designs into functional, visually appealing websites.
 
@@ -18,9 +18,10 @@ I focus on writing well-structured code and creating user-friendly designs that 
 * ✅ HTML5
 * ✅ CSS3
 * ✅ Bootstrap 5
+* ✅ Javascript
+* ✅ React
 * ✅ Responsive Web Design
 * ✅ Git & GitHub
-* 🔄 Currently Enhancing: JavaScript
 
 ---
 
