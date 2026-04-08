@@ -789,6 +789,13 @@ body:has(button:hover) .cursor {
     color: #f7df1e;
 }
 
+.chip-4 {
+    top: 50px;
+    left: -40px;
+    animation-delay: -3s;
+    color: #61dafb;
+}
+
 @keyframes chipFloat {
 
     0%,
